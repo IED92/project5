@@ -1,6 +1,6 @@
 (function($){
 
-  $('body').append('Hello World');
+  // $('body').append('Hello World');
   // Your code goes here
 
   // 1. get request to grab random post and append to the dom
