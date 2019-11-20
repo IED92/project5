@@ -11,7 +11,7 @@ a {
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: $color__link;
 		filter: brightness(80%);
 	}
 
@@ -31,7 +31,8 @@ a {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 75px;
-
+	margin-left: 2px;
+	
 	ul {
 		list-style: none;
 		margin-left: 10px;
@@ -66,4 +67,8 @@ a {
 	width: 260px;
 	display: flex;
 	justify-content: space-between;
+}
+
+.site-info {
+	margin-left: 10px;
 }

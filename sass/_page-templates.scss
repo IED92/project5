@@ -7,10 +7,9 @@
 /* Home */
 
 .home-content {
-  margin-left: 15px;
-  margin-top: 20px;
-  font-size: 1.2rem;
-  max-width: 425px;
+  margin: 15px;
+  font-size: 1.25rem;
+  max-width: 100vw;
   font-weight: 300;
   & h2 {
      font-size: 20px;
@@ -23,7 +22,6 @@
      font-style: italic;
   }
  }
-
 
 .main-logo {
   width: 300px;
