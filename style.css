@@ -240,14 +240,22 @@ textarea {
   line-height: 1.5; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both; }
 
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -266,20 +274,36 @@ pre {
   overflow: auto;
   padding: 1.6rem; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: .9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
 big {
   font-size: 125%; }
+
+.quote-icon {
+  display: none;
+  color: #00cc00;
+  font-size: 125px;
+  line-height: 125px;
+  -webkit-transform: translate(0, 40px);
+          transform: translate(0, 40px); }
+  @media screen and (min-width: 1080px) {
+    .quote-icon {
+      display: inline; } }
 
 /*--------------------------------------------------------------
 # Elements
@@ -493,6 +517,14 @@ a {
   @media screen and (min-width: 620px) {
     .site-info p {
       margin-left: 15px; } }
+  @media screen and (min-width: 1080px) {
+    .site-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -600,10 +632,31 @@ a {
     font-style: italic; }
   @media screen and (min-width: 1080px) {
     .home-content {
-      width: 420px;
-      display: inline-block; }
+      width: 640px;
+      display: inline-block;
+      -webkit-transform: translate(40px);
+              transform: translate(40px); }
       .home-content p {
-        text-align: left; } }
+        text-align: left;
+        font-size: 40px; } }
+
+@media screen and (min-width: 1080px) {
+  .entry-meta {
+    text-align: left; } }
+
+@media screen and (min-width: 1080px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 100%; } }
+
+.content-with-quotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
 
 /*--------------------------------------------------------------
 # Media

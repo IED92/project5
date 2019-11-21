@@ -94,4 +94,8 @@ a {
 			margin-left: 15px;
 		}
 	}
+	@include for-desktop {
+		display: flex;
+		justify-content: flex-end;
+	}
 }

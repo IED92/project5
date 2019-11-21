@@ -65,10 +65,31 @@
 	}
 
 	@include for-desktop {
-		width: 420px;
+		width: 640px;
 		display: inline-block;
+		transform: translate(40px);
 		& p {
 			text-align: left;
+			font-size: 40px;
 		}
 	}
+}
+
+.entry-meta {
+	@include for-desktop {
+		text-align: left;
+	}
+}
+
+.container {
+	@include for-desktop {
+	margin: 0 auto;
+	max-width: 1080px;
+	width: 100%;
+	}
+}
+
+.content-with-quotes {
+	display: flex;
+	justify-content: space-evenly;
 }
