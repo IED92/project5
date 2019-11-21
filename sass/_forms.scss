@@ -17,6 +17,11 @@ input[type="submit"] {
 	line-height: 1;
 	padding: .65rem 2.25rem;
 
+	@include for-tablet {
+		font-size: 1.25rem;
+		font-weight: 500;
+	}
+
 	&:hover,
 	&:active,
 	&:focus {

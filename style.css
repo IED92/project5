@@ -42,8 +42,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Exo:300,300i&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Exo:300,300i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo:300,300i,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo:300,300i,500&display=swap");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -361,6 +361,13 @@ input[type="submit"] {
   font-weight: 700;
   line-height: 1;
   padding: .65rem 2.25rem; }
+  @media screen and (min-width: 620px) {
+    button,
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+      font-size: 1.25rem;
+      font-weight: 500; } }
   button:hover, button:active, button:focus,
   input[type="button"]:hover,
   input[type="button"]:active,
@@ -432,19 +439,24 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 75px; }
+  margin-top: 75px;
+  height: 15px; }
   .main-navigation ul {
     list-style: none;
     margin: 0;
-    margin-left: 3px;
     padding: 0; }
     .main-navigation ul a {
       display: block;
       text-decoration: none;
       border-right: 1px solid #fff;
-      padding: 0 10px; }
+      padding: 0 15px; }
     .main-navigation ul li:last-child a {
       border-right: none; }
+      @media screen and (min-width: 620px) {
+        .main-navigation ul li:last-child a {
+          border-right: 1px solid #fff; } }
+    .main-navigation ul li:first-child a {
+      padding-left: 0; }
 
 /* Small menu. */
 @media screen and (min-width: 768px) {
@@ -468,12 +480,19 @@ a {
           justify-content: space-between; }
 
 .site-info {
-  margin-left: 13px; }
+  margin-left: 13px;
+  font-weight: 300; }
   @media screen and (min-width: 620px) {
     .site-info {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex;
+      -webkit-box-align: baseline;
+          -ms-flex-align: baseline;
+              align-items: baseline; } }
+  @media screen and (min-width: 620px) {
+    .site-info p {
+      margin-left: 15px; } }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -553,10 +572,38 @@ a {
 .entry-content,
 .entry-summary {
   margin: 1.5rem 0 0; }
+  @media screen and (min-width: 620px) {
+    .page-content p,
+    .entry-content p,
+    .entry-summary p {
+      font-size: 1.75rem; } }
 
 .page-links {
   clear: both;
   margin: 0 0 1.5rem; }
+
+@media screen and (min-width: 1080px) {
+  .site-main {
+    text-align: center; } }
+
+.home-content {
+  margin: 15px;
+  font-size: 1.25rem;
+  max-width: 100vw;
+  font-weight: 300; }
+  .home-content h2 {
+    font-size: 20px;
+    font-weight: 300; }
+  .home-content .entry-title {
+    display: inline; }
+  .home-content span.source {
+    font-style: italic; }
+  @media screen and (min-width: 1080px) {
+    .home-content {
+      width: 420px;
+      display: inline-block; }
+      .home-content p {
+        text-align: left; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -579,24 +626,21 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Home */
-.home-content {
-  margin: 15px;
-  font-size: 1.25rem;
-  max-width: 100vw;
-  font-weight: 300; }
-  .home-content h2 {
-    font-size: 20px;
-    font-weight: 300; }
-  .home-content .entry-title {
-    display: inline; }
-  .home-content span.source {
-    font-style: italic; }
-
 .main-logo {
   width: 300px;
   height: auto;
   margin-top: 60px;
   margin-left: 15px; }
+  @media screen and (min-width: 620px) {
+    .main-logo {
+      width: 500px; } }
+  @media screen and (min-width: 1080px) {
+    .main-logo {
+      width: 700px; } }
+
+@media screen and (min-width: 1080px) {
+  .site-branding {
+    text-align: center; } }
 
 /* All Archives Page */
 /* Submit a Quote Page */
