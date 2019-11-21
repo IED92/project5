@@ -7,9 +7,10 @@
   // 1. get request to grab random post and append to the dom
     
     // Add click event for "Show me another" button and then run ajax code below
+    $("#new-quote-button").click(function () {
     $.ajax({
-      method: 'GET'
-      // url: qod.vars.rest_url + /wp/vs/posts?filter[orderby]=rand&filter[posts_per_page]=1
+      method: 'GET',
+      url: qod.vars.rest_url + /wp/vs/posts?filter[orderby]=rand&filter[posts_per_page]:1
     })
     .done(function(data){
       console.log(data);
@@ -18,4 +19,4 @@
     })
   // 2. post a new quote using the post method
   // Using a form to submit a qoute to a .submit event
-})(jQuery);
+})})(jQuery);

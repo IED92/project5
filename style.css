@@ -432,15 +432,19 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 75px;
-  margin-left: 2px; }
+  margin-top: 75px; }
   .main-navigation ul {
     list-style: none;
-    margin-left: 10px;
+    margin: 0;
+    margin-left: 3px;
     padding: 0; }
     .main-navigation ul a {
       display: block;
-      text-decoration: none; }
+      text-decoration: none;
+      border-right: 1px solid #fff;
+      padding: 0 10px; }
+    .main-navigation ul li:last-child a {
+      border-right: none; }
 
 /* Small menu. */
 @media screen and (min-width: 768px) {
@@ -456,7 +460,6 @@ a {
   overflow: hidden; }
 
 .menu-nav-container ul {
-  width: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,7 +468,7 @@ a {
           justify-content: space-between; }
 
 .site-info {
-  margin-left: 10px; }
+  margin-left: 13px; }
 
 /*--------------------------------------------------------------
 # Accessibility

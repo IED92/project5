@@ -31,17 +31,21 @@ a {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 75px;
-	margin-left: 2px;
-	
+
 	ul {
 		list-style: none;
-		margin-left: 10px;
+		margin: 0;
+		margin-left: 3px;
 		padding: 0;
-
-		a {
-			display: block;
-			text-decoration: none;
-		}
+			a {
+				display: block;
+				text-decoration: none;
+				border-right: 1px solid #fff;
+				padding: 0 10px;
+			}
+		li:last-child a {
+			border-right: none;
+		}	
 	}
 }
 
@@ -64,11 +68,10 @@ a {
 }
 
 .menu-nav-container ul {
-	width: 260px;
 	display: flex;
 	justify-content: space-between;
 }
 
 .site-info {
-	margin-left: 10px;
+	margin-left: 13px;
 }
