@@ -354,9 +354,9 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   background: none;
-  border: 2px solid #0c0;
+  border: 2px solid #00cc00;
   border-radius: 3px;
-  color: #0c0;
+  color: #00cc00;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1;
@@ -469,6 +469,11 @@ a {
 
 .site-info {
   margin-left: 13px; }
+  @media screen and (min-width: 620px) {
+    .site-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 /*--------------------------------------------------------------
 # Accessibility

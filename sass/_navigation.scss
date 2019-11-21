@@ -74,4 +74,8 @@ a {
 
 .site-info {
 	margin-left: 13px;
+	
+	@include for-tablet {
+		display: inline-block;
+	}
 }
