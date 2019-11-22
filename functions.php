@@ -60,14 +60,14 @@ function qod_scripts() {
 
 	wp_enqueue_script( 'qod-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'qod-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
-	wp_enqueue_script( 'qod-stript', get_template_directory_uri() . '/build/js/qod.min.js', array('jquery'), '', true );
+	wp_enqueue_script( 'qod-script', get_template_directory_uri() . '/build/js/qod.min.js', array('jquery'), '', true );
 	wp_enqueue_script( 'qod-fa-cdn', "https://kit.fontawesome.com/c14e7bafd7.js", array(), '20151215', true );
 
 	// Here is your localized script code, reference qod-script
-	wp_localize_script('red_api', 'api_vars', array(
-		'nonce' => wp_create_nonce('wp_rest'),
-		// 'success' => 'Thanks, your submission was received!',
-		// 'failure' => 'Your submission could not be processed.',
+	wp_localize_script('qod-script', 'qod_vars', array(
+		'rest_url' => rest_url(),
+		'home_url' => home_url(),
+		'nonce'    => wp_create_nonce('wp_rest')
 	));
 }
 

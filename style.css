@@ -305,6 +305,9 @@ big {
     .quote-icon {
       display: inline; } }
 
+.fa-quote-right {
+  margin-left: 20px; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -408,7 +411,8 @@ input[type="submit"] {
             filter: brightness(80%); }
 
 #new-quote-button {
-  margin-top: 30px; }
+  margin-top: 30px;
+  text-align: center; }
 
 /* Fields */
 input[type="text"],
