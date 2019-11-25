@@ -18,9 +18,9 @@ get_header(); ?>
       <?php endwhile; // End of the loop. 
       ?>
     </main><!-- #main -->
-    <p>Quotes on Dev is a project site for the RED Academy Web Developer Professional program. It’s used to experiment with Ajax, WP API, jQuery, and other cool things. 🙂
-
-      This site is heavily inspired by Chris Coyier’s Quotes on Design.
+    <p class="main">Quotes on Dev is a project site for the RED Academy Web Developer Professional program.
+      It’s used to experiment with Ajax, WP API, jQuery, and other cool things. 🙂</p>
+    <p>This site is heavily inspired by Chris Coyier’s Quotes on Design.</p>
 
     </p>
   </div><!-- #primary -->

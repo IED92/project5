@@ -1,24 +1,29 @@
 <?php
+
 /**
- * The template for displaying all single posts.
+ * The main template file.
  *
  * @package QOD_Starter_Theme
  */
-
 get_header(); ?>
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+		<div class="home-content">
+			<?php if (have_posts()) : ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+				<?php /* Start the Loop */ ?>
+				<?php while (have_posts()) : the_post(); ?>
 
-		<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part('template-parts/content'); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+				<?php endwhile; ?>
 
-			<?php the_post_navigation(); ?>
+			<?php else : ?>
 
-		<?php endwhile; // End of the loop. ?>
+				<?php get_template_part('template-parts/content', 'none'); ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
+			<?php endif; ?>
+		</div>
+	</main><!-- #main -->
+</div><!-- #primary -->
 <?php get_footer(); ?>
